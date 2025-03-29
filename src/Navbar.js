@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './index.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">🍀 सब्जी ई-कॉमर्स</div>
-      <ul>
-        <li><a href="/">होम</a></li>
-        <li><a href="/products">प्रोडक्ट्स</a></li>
-        <li><a href="/cart">कार्ट 🛒</a></li>
-        <li><a href="/contact">संपर्क करें</a></li>
-      </ul>
+      <h1>Sabji Ecommerce</h1>
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/products">Products</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/about">About</Link>
+      </div>
     </nav>
   );
 };
